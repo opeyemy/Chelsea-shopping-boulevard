@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea shopping boulevard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="#"><img src="./images/chelse.png" alt="Chelsea Shopping Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="https://www.chelseafc.com/en/news/latest-news">Menu</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact us.html">Contact Us</a></li>
+                <li><a href="https://www.newsnow.co.uk/h/Sport/Football/Premier+League/Chelsea>News">News</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+        <div class="cart">
+            <a href="#cart"><img src="./images/download (1).png" alt="Shopping Cart"></a>
+        </div>
+        <div class="menu-toggle">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+         <!-- Hero Section -->
+      
+            <div class="hero-content">
+                <p> <marquee behavior="" direction=""> <b>Welcome to Shopping Mall <br></marquee>
+            Your one-stop destination for all your shopping needs.</b></p>
+            </div>
+        </section>
+
+       
+            <div class="image-container">
+                <div class="image-box">
+                    <h1>Fried Fish</h1>
+                    <img src="./images/food1.jpeg" alt="Image 1">
+                    <h1>Item 2</h1>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                        Recusandae culpa nisi enim omnis consequuntur nihil eos? <br></p>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('./food1.jpeg','Item 2',20 )" >Add to Cart</button>
+                    <button>Shop Now</button>
+                </div>
+                <div class="image-box">
+                    <h1>special meal</h1>
+                    <img src="./images/fish.jpeg" alt="Image 2">
+                    <h1>Item 2</h1>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                 Recusandae culpa nisi enim omnis consequuntur nihil eos? <br></p>
+                    <p>$50.00</p>
+                    <button onclick="addToCart('./fish.jpeg','Item 2',50 )" >Add to Cart</button>
+                    <button>Shop Now</button>
+                </div>
+                <div class="image-box">
+                    <h1>Real</h1>
+                    <img src="./images/food1.jpeg" alt="image" id="image">
+                    <h1>Item 2</h1>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                        Recusandae culpa nisi enim omnis consequuntur nihil eos? <br></p>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('./food1.jpeg','Item 2',15 )  " ><a href="./cart.html">Add to cart</a></button>
+                    <button onclick="">Shop Now</button>
+                </div>
+            </div>
+        
+        <section>
+            <div class="my-div">
+                <P class="para">Our services <br> ask for more.......... </P>
+             
+                  <button type="button" onclick="placeOrder()">Place Order</button>
+            </div>       
+        </section>   
+                    
+               
+    </main>
+    <!-- slide content -->
+    
+     <section>
+        <section id="home">
+            <div class="video-container">
+                <video autoplay muted loop id="myVideo">
+                  <source src="./video/ffff.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+            </video>
+            </section>
+            <section class="dip">
+            <marquee behavior="left-right" direction=""><h2>Welcome to Chelsea mall we are ready to for your Request</h2></marquee> 
+            <p>Experience the taste of victory with our delicious dishes inspired by the Chelsea Football Club!</p>
+           
+        </section>
+    <!-- section -->
+    <section id="u-section">
+       
+<div class="container">
+    <div class="colored-section">
+        <h2>Special Offers</h2>
+        <p>Enjoy exclusive discounts and special offers available only for a limited time. Don't miss out on our seasonal specials and delightful dishes!</p>
+        <button class="register"><a href="register">Register Now</button></a>
+    </div>
+</div>
+       <!-- flex -->
+<div class="flex-row">
+    <div class="flex-colum">
+        <h2 class="ask">Ask about </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Donec vel metus non urna consequat pulvinar. Curabitur ac urna<br>
+      in libero vehicula luctus.</p>
+    </div>
+    <div class="flex-colum">
+        <h2 class="ask">Ask about </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Donec vel metus non urna consequat pulvinar. Curabitur ac urna<br>
+      in libero vehicula luctus.</p>
+    </div>
+    <div class="flex-colum">
+        <h2 class="ask">Ask about </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Donec vel metus non urna consequat pulvinar. Curabitur ac urna<br>
+      in libero vehicula luctus.</p>
+    </div>
+  </div>
+   
+  
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shoppingmall.com</p>
+                <p>Phone: +2348094541253</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shops">Shops</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./images/instagram.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shopping Mall. All rights reserved.
+            <img src="./images/my passport.jpg" alt="" sizes="30px" width="30px"></a></p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+
+    
+</body>
+</html>

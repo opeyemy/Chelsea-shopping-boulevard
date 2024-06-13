@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>cart</h1>
+    <div class="cartItems" id="cart">
+
+  <script>
+   let cart =JSON.parse(localStorage.getItem("cart"))||[]
+/*
+function addToCart(imageUrl,productName,price) {
+  let item={
+    image:imageUrl,
+    name:productName,
+    price:price
+  };
+  cart.push(item);
+  updateCart();
+}
+localStorage.setItem("cart", JSON.stringify)*/
+
+function updateCart() {
+    let cart=JSON.parse(localStorage.getItem("cart"))|| [];
+  let cartItemElement=document.getElementById('cartItems')
+  cartItemElement.innerHTML="0";
+  let totalPrice=0;
+
+  cart.forEach(function(item){
+
+  let listItem=document.createElement("li");
+
+  // For image//
+  let img=document.createElement('img');
+  img.src=item.image;
+  img.alt=item.name;
+  img.style.width="50px";
+  img.style.height="50px";
+
+listItem.appendChild(img);
+  
+  listItem.textContent= item.name + "-$"+ item.price;
+    cartItemElement.appendChild(listItem);
+    totalPrice+=item.price;
+  
+  }
+);
+
+let totalPriceElement=document.createElement("li")
+totalPriceElement.textContent="Total:$" + totalPrice;
+cartItemElement.appendChild(totalPriceElement);
+
+};
+Window.onload=updateCart();
+
+
+
+  </script>
+</body>
+</html>

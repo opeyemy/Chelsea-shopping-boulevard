@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Phone Products Section -->
+        <section class="phone-products">
+            <h2 class="phone">Our Phone Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="./images/pexels-rann-vijay-677553-7742555.jpg" alt="Phone 1">
+                    <div class="product-info">
+                        <h3>IPhone Categories</h3>
+                        <p>High quality smartphone with excellent features.</p>
+                        
+                        <button type="button" onclick="placeOrder()" class="tooltip">View details</button>
+                            <span class="tooltiptext">Click to place your order</span>
+                          </button>
+                          <div id="loadingIndicator" style="display:none;">Processing...</div>
+                  
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/samsung.jpg" alt="Phone 2">
+                    <div class="product-info">
+                        <h3>Samsung Categories</h3>
+                        <p>Next-gen smartphone with cutting-edge technology.</p>
+                        <button type="button" onclick="placeOrder()" class="tooltip">View Details</button>
+                            <span class="tooltiptext">Click to place your order</span>
+                          
+                          <div id="loadingIndicator" style="display:none;">Processing...</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/samsung.jpg" alt="Phone 3">
+                    <div class="product-info">
+                        <h3>Android Categories</h3>
+                        <p>Stylish and powerful smartphone for modern users.</p>
+                        <button type="button" onclick="placeOrder()" class="tooltip">View details</button>
+                            <span class="tooltiptext">Click to place your order</span>
+            
+                          <div id="loadingIndicator" style="display:none;">Processing...</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/android.png" alt="Phone 3">
+                    <div class="product-info">
+                        <h3>Lenovo Laptop</h3>
+                        <p>Stylish and powerful Lenovo Laptops for modern users.</p>
+                        <button>View Details</button>
+                </div>
+                </div>
+                 <!-- Phone Products Section 2-->
+                 
+        <section class="phone-products">
+            <h2 class="phone">Our Laptop Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="./images/ph1.jpg" alt="Phone 1">
+                    <div class="product-info">
+                        <h3>HP Laptops</h3>
+                        <p>High quality HP Laptops with excellent features.</p>
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/pexels-rann-vijay-677553-7742555.jpg" alt="Phone 2">
+                    <div class="product-info">
+                        <h3>Dells Laptop</h3>
+                        <p>Next-gen Dells Laptops with cutting-edge technology.</p>
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/istockphoto-1362775618-612x612.jpg" alt="Phone 3">
+                    <div class="product-info">
+                        <h3>Lenovo Laptop</h3>
+                        <p>Stylish and powerful Lenovo Laptops for modern users.</p>
+                        <button>View Details</button>
+                </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/istockphoto-1362775618-612x612.jpg" alt="Phone 3">
+                    <div class="product-info">
+                        <h3>Lenovo Laptop</h3>
+                        <p>Stylish and powerful Lenovo Laptops for modern users.</p>
+                        <button type="button" onclick="placeOrder()">View details</button>
+                </div>
+            </div>
+        </section>
+        <form>
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <br>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+          </form>
+        
+        <script src="./index.js"></script>
+     
+</html>
